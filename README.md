@@ -52,6 +52,8 @@ Every bench follows the same pattern:
 
 Default tests: `apb_full_test`, `uart_full_test`, `spi_full_test`, `i2c_full_test`. For AXI, pass `+UVM_TESTNAME` (see its test plan).
 
+For the full run matrix (every test and every `BUG_*` define), what to copy from the logs, and how to paste results into the test-plan tables, see [docs/running_on_eda_playground.md](docs/running_on_eda_playground.md).
+
 ## Compile check (no simulator needed)
 
 `scripts/compile_check.sh` compiles every bench against the UVM 1.2 source with [slang](https://github.com/MikePopoloski/slang). It builds each clean DUT and each `` `ifdef `` variant. One-time setup is in the script header. Then run:
